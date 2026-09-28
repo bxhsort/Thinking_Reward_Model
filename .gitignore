@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+dist/
+build/
+
+# Local data, outputs, and model weights.
+data/
+outputs/
+runs/
+checkpoints/
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Environment and machine-local files.
+.env
+.env.*
+*.log
+

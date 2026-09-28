@@ -1,0 +1,23 @@
+server:
+  hosts:
+    - 127.0.0.1
+  worker_base_port: 18888
+  proxy_port: 23456
+
+reward:
+  model_name_or_path: your-org/your-edit-reward-model
+  tensor_parallel_size: 1
+  gpu_memory_utilization: 0.88
+  max_num_seqs: 32
+  max_model_len: 32768
+  max_num_batched_tokens: 98304
+  enable_prefix_caching: true
+  batch_size: 4
+  num_pass: 2
+  max_score_retries: 5
+  max_tokens: 1536
+  seed: 42
+  temperature: 0.0
+  enable_thinking: false
+  invalid_score: 0
+

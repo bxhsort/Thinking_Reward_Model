@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trm-reward"
+version = "0.1.0"
+description = "Open-source inference utilities for thinking edit and text-to-image reward models."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "TRM Contributors" }]
+dependencies = [
+  "pillow==12.3.0",
+  "huggingface_hub==1.25.1",
+]
+
+[project.optional-dependencies]
+transformers = [
+  "qwen-vl-utils==0.0.14",
+  "safetensors==0.8.0",
+  "tokenizers==0.22.2",
+  "torch==2.11.0",
+  "torchvision==0.26.0",
+  "transformers==5.8.1",
+]
+vllm-client = [
+  "openai==2.50.0",
+]
+vllm-server = [
+  "openai==2.50.0",
+  "vllm==0.21.0",
+]
+dev = [
+  "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

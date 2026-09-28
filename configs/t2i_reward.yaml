@@ -1,0 +1,23 @@
+server:
+  hosts:
+    - 127.0.0.1
+  worker_base_port: 8000
+  proxy_port: 23456
+
+reward:
+  model_name_or_path: your-org/your-t2i-reward-model
+  tensor_parallel_size: 2
+  gpu_memory_utilization: 0.85
+  max_num_seqs: 32
+  max_model_len: 16384
+  max_num_batched_tokens: 65536
+  enable_prefix_caching: true
+  batch_size: 16
+  num_pass: 2
+  max_score_retries: 5
+  max_tokens: 4096
+  seed: 42
+  temperature: 0.0
+  enable_thinking: false
+  invalid_score: 0
+
