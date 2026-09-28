@@ -12,36 +12,16 @@ TRM provides two visual reward models:
 
 ## Installation
 
-We recommend Python 3.12 with the tested dependency versions below.
+We recommend Python 3.12.
 
 ```bash
-git clone https://github.com/your-org/TRM.git
-cd TRM
+git clone https://github.com/bxhsort/Thinking_Reward_Model.git
+cd Thinking_Reward_Model
 
 conda create -n trm python=3.12 -y
 conda activate trm
 pip install -U pip
-```
-
-Install the tested inference stack:
-
-```bash
-pip install \
-  torch==2.11.0 \
-  torchvision==0.26.0 \
-  transformers==5.8.1 \
-  tokenizers==0.22.2 \
-  safetensors==0.8.0 \
-  qwen-vl-utils==0.0.14 \
-  pillow==12.3.0 \
-  huggingface_hub==1.25.1 \
-  openai==2.50.0 \
-  vllm==0.21.0
-```
-
-Install this repository in editable mode:
-
-```bash
+pip install -r requirements.txt
 pip install -e .
 ```
 
@@ -51,7 +31,6 @@ Download the released checkpoints from Hugging Face. Replace the repo ids below
 with the official model ids from the paper release.
 
 ```bash
-pip install -U "huggingface_hub[cli]"
 # hf auth login  # only needed for gated/private checkpoints
 
 mkdir -p checkpoints
