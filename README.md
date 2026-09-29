@@ -41,13 +41,6 @@ Xuanyu Zhu · Ruohui Wang · Haiwen Diao · Haotian Wang<sup>†</sup> · Xiaoli
 - **Structured judgments.** Rubric-level checks and dimension-level explanations accompany a final score on a 0–10 scale.
 - **Preference learning without persistent score-gap expansion.** Cold-start SFT is followed by **Pairwise Dual-Group Relative Policy Optimization (PD-GRPO)**, which stops rewarding further separation once the required margin is met.
 
-This repository provides **inference code** for two task-specific models, with local Transformers inference and OpenAI-compatible vLLM serving.
-
-| Model | Task | Inputs | Output |
-| :--- | :--- | :--- | :--- |
-| **TRM-Edit** | Image editing | Source image + edited image + instruction | Structured evaluation + reward |
-| **TRM-T2I** | Text-to-image generation | Generated image + prompt | Structured evaluation + reward |
-
 <details>
 <summary><b>How TRM is trained</b></summary>
 
@@ -96,8 +89,6 @@ Qualitative examples from the paper show improved instruction following and pres
 ## Quick Start
 
 ### 1. Install
-
-Use **Python 3.12 or newer** and a CUDA-capable environment for GPU inference. The pinned requirements include both Transformers and vLLM.
 
 ```bash
 git clone https://github.com/bxhsort/Thinking_Reward_Model.git
@@ -290,8 +281,6 @@ python scripts/infer_t2i.py \
 ```
 
 </details>
-
-Each output record preserves the input fields, adds `_line_number`, and stores the result under `trm_edit` or `trm_t2i`. Records are written in completion order; `_line_number` maps them back to the input. Failed scoring requests contain `ok: false` and an `error` message.
 
 ## License
 
