@@ -17,7 +17,7 @@ Xuanyu Zhu · Ruohui Wang · Haiwen Diao · Haotian Wang<sup>†</sup> · Xiaoli
   &nbsp;
   <a href="https://huggingface.co/collections/asdjghh/thinking-reward-model"><img src="assets/huggingface-link.svg" alt="Hugging Face" height="44"></a>
   &nbsp;
-  <a href="https://trm-think-before-you-score.baixuehai085.chatgpt.site"><img src="assets/project-page-link.svg" alt="Project Page" height="44"></a>
+  <a href="https://bxhsort.github.io/Thinking-Reward-Model/"><img src="assets/project-page-link.svg" alt="Project Page" height="44"></a>
 </p>
 
 [News](#-news) · [Overview](#overview) · [Results](#results) · [Quick Start](#quick-start) · [Models](#models)
