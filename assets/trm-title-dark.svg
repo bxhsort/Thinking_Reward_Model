@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="224" viewBox="0 0 1120 224" role="img" aria-labelledby="title desc">
+<title id="title">Think Before You Score</title>
+<desc id="desc">TRM: Thinking Reward Model for Visual Generation.</desc>
+<rect x="518" y="12" width="84" height="32" rx="16" fill="#163D33"/>
+<text x="560" y="34" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="17" font-weight="750" letter-spacing="3" fill="#73D4B0">TRM</text>
+<text x="560" y="122" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="72" font-weight="750" letter-spacing="-2.2"><tspan fill="#73D4B0">Think Before</tspan><tspan dx="16" fill="#F0F5F7">You Score</tspan></text>
+<text x="560" y="170" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif" font-size="28" font-weight="450" letter-spacing="-.3" fill="#A9BAC4">Thinking Reward Model for Visual Generation</text>
+<path d="M532 202H588" stroke="#73D4B0" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+</svg>

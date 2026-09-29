@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="528" height="756" viewBox="0 0 528 756" role="img" aria-labelledby="title desc">
+<title id="title">Visual generation improves with TRM-guided reinforcement learning</title>
+<desc id="desc">Image generation: BAGEL on TIIF-Long improves from 75.62 to 81.43, an absolute gain of 5.81. FLUX.1-dev on GenEval improves from 0.66 to 0.73, a gain of 0.07. Image editing: BAGEL on ImgEdit improves from 3.37 to 3.91, a gain of 0.54. SenseNova-U1.5 on ImgEdit improves from 4.30 to 4.52, a gain of 0.22. Scores retain each benchmark's original scale.</desc>
+<g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif">
+<text x="2" y="18" font-size="13" font-weight="700" letter-spacing="1.8" fill="#79D5AF">IMAGE GENERATION</text>
+<path d="M198 13H527" stroke="#33464E"/>
+<text x="2" y="408" font-size="13" font-weight="700" letter-spacing="1.8" fill="#9EBEFF">IMAGE EDITING</text>
+<path d="M160 403H527" stroke="#33464E"/>
+<g transform="translate(0 34)">
+<rect x=".5" y=".5" width="527" height="157" rx="14" fill="#16252B" stroke="#33464E"/>
+<text x="24" y="35" fill="#EDF3F6" font-size="23" font-weight="650">BAGEL</text>
+<text x="24" y="58" fill="#A6B5BD" font-size="14">TIIF-Long</text>
+<text x="24" y="92" fill="#A6B5BD" font-size="11" font-weight="650" letter-spacing="1">BASE</text>
+<text x="207" y="92" fill="#79D5AF" font-size="11" font-weight="700" letter-spacing=".65">TRM-GUIDED RL</text>
+<text x="24" y="134" fill="#A6B5BD" font-size="39" font-weight="450" letter-spacing="-.8">75.62</text>
+<path d="M159 119h25m-7-7 7 7-7 7" stroke="#A6B5BD" stroke-opacity=".65" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="205" y="134" fill="#79D5AF" font-size="39" font-weight="750" letter-spacing="-.8">81.43</text>
+<rect x="384" y="99" width="120" height="39" rx="19.5" fill="#224239"/>
+<path d="M401 124v-11m-4 4 4-4 4 4" stroke="#79D5AF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="414" y="125" fill="#79D5AF" font-size="19" font-weight="700">+5.81</text>
+</g>
+<g transform="translate(0 208)">
+<rect x=".5" y=".5" width="527" height="157" rx="14" fill="#16252B" stroke="#33464E"/>
+<text x="24" y="35" fill="#EDF3F6" font-size="23" font-weight="650">FLUX.1-dev</text>
+<text x="24" y="58" fill="#A6B5BD" font-size="14">GenEval</text>
+<text x="24" y="92" fill="#A6B5BD" font-size="11" font-weight="650" letter-spacing="1">BASE</text>
+<text x="207" y="92" fill="#79D5AF" font-size="11" font-weight="700" letter-spacing=".65">TRM-GUIDED RL</text>
+<text x="24" y="134" fill="#A6B5BD" font-size="39" font-weight="450" letter-spacing="-.8">0.66</text>
+<path d="M159 119h25m-7-7 7 7-7 7" stroke="#A6B5BD" stroke-opacity=".65" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="205" y="134" fill="#79D5AF" font-size="39" font-weight="750" letter-spacing="-.8">0.73</text>
+<rect x="384" y="99" width="120" height="39" rx="19.5" fill="#224239"/>
+<path d="M401 124v-11m-4 4 4-4 4 4" stroke="#79D5AF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="414" y="125" fill="#79D5AF" font-size="19" font-weight="700">+0.07</text>
+</g>
+<g transform="translate(0 424)">
+<rect x=".5" y=".5" width="527" height="157" rx="14" fill="#16252B" stroke="#33464E"/>
+<text x="24" y="35" fill="#EDF3F6" font-size="23" font-weight="650">BAGEL</text>
+<text x="24" y="58" fill="#A6B5BD" font-size="14">ImgEdit</text>
+<text x="24" y="92" fill="#A6B5BD" font-size="11" font-weight="650" letter-spacing="1">BASE</text>
+<text x="207" y="92" fill="#9EBEFF" font-size="11" font-weight="700" letter-spacing=".65">TRM-GUIDED RL</text>
+<text x="24" y="134" fill="#A6B5BD" font-size="39" font-weight="450" letter-spacing="-.8">3.37</text>
+<path d="M159 119h25m-7-7 7 7-7 7" stroke="#A6B5BD" stroke-opacity=".65" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="205" y="134" fill="#9EBEFF" font-size="39" font-weight="750" letter-spacing="-.8">3.91</text>
+<rect x="384" y="99" width="120" height="39" rx="19.5" fill="#263A54"/>
+<path d="M401 124v-11m-4 4 4-4 4 4" stroke="#9EBEFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="414" y="125" fill="#9EBEFF" font-size="19" font-weight="700">+0.54</text>
+</g>
+<g transform="translate(0 598)">
+<rect x=".5" y=".5" width="527" height="157" rx="14" fill="#16252B" stroke="#33464E"/>
+<text x="24" y="35" fill="#EDF3F6" font-size="23" font-weight="650">SenseNova-U1.5</text>
+<text x="24" y="58" fill="#A6B5BD" font-size="14">ImgEdit</text>
+<text x="24" y="92" fill="#A6B5BD" font-size="11" font-weight="650" letter-spacing="1">BASE</text>
+<text x="207" y="92" fill="#9EBEFF" font-size="11" font-weight="700" letter-spacing=".65">TRM-GUIDED RL</text>
+<text x="24" y="134" fill="#A6B5BD" font-size="39" font-weight="450" letter-spacing="-.8">4.30</text>
+<path d="M159 119h25m-7-7 7 7-7 7" stroke="#A6B5BD" stroke-opacity=".65" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="205" y="134" fill="#9EBEFF" font-size="39" font-weight="750" letter-spacing="-.8">4.52</text>
+<rect x="384" y="99" width="120" height="39" rx="19.5" fill="#263A54"/>
+<path d="M401 124v-11m-4 4 4-4 4 4" stroke="#9EBEFF" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="414" y="125" fill="#9EBEFF" font-size="19" font-weight="700">+0.22</text>
+</g>
+</g></svg>
