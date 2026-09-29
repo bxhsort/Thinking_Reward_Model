@@ -1,33 +1,5 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/trm-title-dark.svg">
-  <img src="assets/trm-title-light.svg" alt="TRM — Think Before You Score: Thinking Reward Model for Visual Generation" width="100%">
-</picture>
-
-<sub>Xuehai Bai<sup>\*</sup> · Zhenchen Tang<sup>\*</sup> · Yang Shi<sup>\*,♠</sup> · Dianyi Wang · Tengfei Liu · Wanshun Su<br>
-Xuanyu Zhu · Ruohui Wang · Haiwen Diao · Haotian Wang<sup>†</sup> · Xiaoling Gu<sup>†</sup> · Yuanxing Zhang</sub>
-
-<sub>HDU · CASIA · PKU · SenseTime · FDU · NWPU · NTU · THU</sub><br>
-<sub><sup>\*</sup> Equal contribution &nbsp; <sup>♠</sup> Project Lead &nbsp; <sup>†</sup> Corresponding authors</sub>
-
-<!-- Add the official paper URL as an anchor around the Paper badge when available. -->
-<p>
-  <img src="assets/paper-link.svg" alt="Paper — link pending" height="44">
-  &nbsp;
-  <a href="https://huggingface.co/collections/asdjghh/thinking-reward-model"><img src="assets/huggingface-link.svg" alt="Hugging Face" height="44"></a>
-  &nbsp;
-  <a href="https://bxhsort.github.io/Thinking-Reward-Model/"><img src="assets/project-page-link.svg" alt="Project Page" height="44"></a>
-</p>
-
-[News](#-news) · [Overview](#overview) · [Results](#results) · [Quick Start](#quick-start) · [Models](#models)
-
-<img src="assets/trm-overview.png" alt="TRM creates case-adaptive evaluation rubrics for image generation and editing, then produces structured judgments and a final reward. The paper also reports reward-modeling and downstream reinforcement-learning results." width="100%">
-
-<sub>One evaluation paradigm for image generation and editing: case-adaptive rubrics → structured assessment → pointwise reward.</sub>
-
-</div>
-
 ## 🔥 News
 
 - `2026/09` 🌟 Inference code for **TRM-Edit** and **TRM-T2I** is available in this repository, with **Transformers** and **vLLM** support.
@@ -56,11 +28,11 @@ Training and benchmark-evaluation pipelines are described in the paper; this rep
 
 Selected results from the accompanying manuscript. All three rows use a **9B** backbone; the baseline is the original Qwen3.5-9B evaluated with the same pointwise protocol.
 
-| Model | GenAI-T2I<br>(%) ↑ | MMRB2-T2I<br>(%) ↑ | EditScore-ERB<br>(O) ↑ | EditReward-ERB<br>(2-path, %) ↑ |
-| :--- | ---: | ---: | ---: | ---: |
-| Qwen3.5-9B baseline | 58.9 | 59.4 | 0.401 | 33.8 |
-| TRM (SFT) | 70.1 | 65.8 | 0.743 | 67.8 |
-| **TRM (RL)** | **71.2** | **67.9** | **0.773** | **71.3** |
+| Model               | GenAI-T2I(%) ↑ | MMRB2-T2I(%) ↑ | EditScore-ERB(O) ↑ | EditReward-ERB(2-path, %) ↑ |
+| :------------------ | --------------: | --------------: | ------------------: | ---------------------------: |
+| Qwen3.5-9B baseline |            58.9 |            59.4 |               0.401 |                         33.8 |
+| TRM (SFT)           |            70.1 |            65.8 |               0.743 |                         67.8 |
+| **TRM (RL)**  |  **71.2** |  **67.9** |     **0.773** |               **71.3** |
 
 <sub>GenAI-T2I and MMRB2-T2I report pairwise preference accuracy on non-tied predictions, following the main-paper protocol. Tie-aware TRM (RL) accuracy is 68.4% and 63.9%, respectively; see the paper appendix for the full protocol.</sub>
 
@@ -151,21 +123,21 @@ Single-image inference prints JSON. The following is a shortened example; rubric
 }
 ```
 
-| Field | Meaning |
-| :--- | :--- |
-| `reward` | Normalized reward in **[0, 1]**, computed as `final_score / 10` |
-| `final_score` | Parsed score clamped to **[0, 10]**; higher is better |
-| `parsed` | The model's structured rubric, judgments, dimension summaries, and score explanation |
-| `raw_output` | The original generated text |
+| Field           | Meaning                                                                              |
+| :-------------- | :----------------------------------------------------------------------------------- |
+| `reward`      | Normalized reward in**[0, 1]**, computed as `final_score / 10`               |
+| `final_score` | Parsed score clamped to**[0, 10]**; higher is better                           |
+| `parsed`      | The model's structured rubric, judgments, dimension summaries, and score explanation |
+| `raw_output`  | The original generated text                                                          |
 
 The vLLM backend also returns `response_id`.
 
 ## Models
 
-| Model | Backbone | Checkpoint configuration |
-| :--- | :--- | :--- |
-| **TRM-Edit** | Qwen3.5-9B | `TRM_EDIT_MODEL` |
-| **TRM-T2I** | Qwen3.5-9B | `TRM_T2I_MODEL` |
+| Model              | Backbone   | Checkpoint configuration |
+| :----------------- | :--------- | :----------------------- |
+| **TRM-Edit** | Qwen3.5-9B | `TRM_EDIT_MODEL`       |
+| **TRM-T2I**  | Qwen3.5-9B | `TRM_T2I_MODEL`        |
 
 Browse the [Thinking Reward Model collection on Hugging Face](https://huggingface.co/collections/asdjghh/thinking-reward-model) for TRM resources. Use local checkpoint paths with the inference commands above.
 
