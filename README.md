@@ -1,5 +1,33 @@
 <div align="center">
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/trm-title-dark.svg">
+  <img src="assets/trm-title-light.svg" alt="TRM — Think Before You Score: Thinking Reward Model for Visual Generation" width="100%">
+</picture>
+
+<sub>Xuehai Bai<sup>&#42;</sup> · Zhenchen Tang<sup>&#42;</sup> · <a href="https://frankyang-17.github.io/">Yang Shi</a><sup>&#42;,♠</sup> · Dianyi Wang · Tengfei Liu · Wanshun Su<br>
+Xuanyu Zhu · Ruohui Wang · Haiwen Diao · Haotian Wang<sup>†</sup> · Xiaoling Gu<sup>†</sup> · <a href="https://longo11070001.github.io/">Yuanxing Zhang</a></sub>
+
+<sub>HDU · CASIA · PKU · SenseTime · FDU · NWPU · NTU · THU</sub><br>
+<sub><sup>&#42;</sup> Equal contribution &nbsp; <sup>♠</sup> Project Lead &nbsp; <sup>†</sup> Corresponding authors</sub>
+
+<!-- Add the official paper URL as an anchor around the Paper badge when available. -->
+<p>
+  <img src="assets/paper-link.svg" alt="Paper — link pending" height="44">
+  &nbsp;
+  <a href="https://huggingface.co/collections/asdjghh/thinking-reward-model"><img src="assets/huggingface-link.svg" alt="Hugging Face" height="44"></a>
+  &nbsp;
+  <a href="https://bxhsort.github.io/Thinking-Reward-Model/"><img src="assets/project-page-link.svg" alt="Project Page" height="44"></a>
+</p>
+
+[News](#-news) · [Overview](#overview) · [Results](#results) · [Quick Start](#quick-start) · [Models](#models)
+
+<img src="assets/trm-overview.png" alt="TRM creates case-adaptive evaluation rubrics for image generation and editing, then produces structured judgments and a final reward. The paper also reports reward-modeling and downstream reinforcement-learning results." width="100%">
+
+<sub>One evaluation paradigm for image generation and editing: case-adaptive rubrics → structured assessment → pointwise reward.</sub>
+
+</div>
+
 ## 🔥 News
 
 - `2026/09` 🌟 Inference code for **TRM-Edit** and **TRM-T2I** is available in this repository, with **Transformers** and **vLLM** support.
