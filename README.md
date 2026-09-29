@@ -112,8 +112,6 @@ export TRM_T2I_MODEL=/path/to/trm-t2i
 
 ### 3. Score an image
 
-Replace `/path/to/...` with your own image files; example images are not bundled.
-
 **Image editing**
 
 ```bash
