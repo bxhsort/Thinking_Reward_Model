@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Run text-to-image reward inference with Transformers or a vLLM server."""
 
 from __future__ import annotations
