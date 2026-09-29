@@ -5,11 +5,11 @@
   <img src="assets/trm-title-light.svg" alt="TRM — Think Before You Score: Thinking Reward Model for Visual Generation" width="100%">
 </picture>
 
-<sub>Xuehai Bai<sup>\*</sup> · Zhenchen Tang<sup>\*</sup> · Yang Shi<sup>\*</sup> · Dianyi Wang · Tengfei Liu · Wanshun Su<br>
+<sub>Xuehai Bai<sup>\*</sup> · Zhenchen Tang<sup>\*</sup> · Yang Shi<sup>\*,♠</sup> · Dianyi Wang · Tengfei Liu · Wanshun Su<br>
 Xuanyu Zhu · Ruohui Wang · Haiwen Diao · Haotian Wang<sup>†</sup> · Xiaoling Gu<sup>†</sup> · Yuanxing Zhang</sub>
 
 <sub>HDU · CASIA · PKU · SenseTime · FDU · NWPU · NTU · THU</sub><br>
-<sub><sup>\*</sup> Equal contribution &nbsp; <sup>†</sup> Corresponding authors</sub>
+<sub><sup>\*</sup> Equal contribution &nbsp; <sup>♠</sup> Project Lead &nbsp; <sup>†</sup> Corresponding authors</sub>
 
 <!-- Add the official paper URL as an anchor around the Paper badge when available. -->
 <p>
