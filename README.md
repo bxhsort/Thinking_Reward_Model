@@ -11,9 +11,8 @@ Xuanyu Zhu · Ruohui Wang · Haiwen Diao · Haotian Wang<sup>†</sup> · Xiaoli
 <sub>HDU · CASIA · PKU · SenseTime · FDU · NWPU · NTU · THU</sub><br>
 <sub><sup>\*</sup> Equal contribution &nbsp; <sup>♠</sup> Project Lead &nbsp; <sup>†</sup> Corresponding authors</sub>
 
-<!-- Add the official paper URL as an anchor around the Paper badge when available. -->
 <p>
-  <img src="assets/paper-link.svg" alt="Paper — link pending" height="44">
+  <a href="https://arxiv.org/abs/2609.37372"><img src="assets/paper-link.svg" alt="Paper" height="44"></a>
   &nbsp;
   <a href="https://huggingface.co/collections/asdjghh/thinking-reward-model"><img src="assets/huggingface-link.svg" alt="Hugging Face" height="44"></a>
   &nbsp;
