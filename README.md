@@ -5,11 +5,11 @@
   <img src="assets/trm-title-light.svg" alt="TRM — Think Before You Score: Thinking Reward Model for Visual Generation" width="100%">
 </picture>
 
-<sub>Xuehai Bai<sup>\*</sup> · Zhenchen Tang<sup>\*</sup> · Yang Shi<sup>\*,♠</sup> · Dianyi Wang · Tengfei Liu · Wanshun Su<br>
-Xuanyu Zhu · Ruohui Wang · Haiwen Diao · Haotian Wang<sup>†</sup> · Xiaoling Gu<sup>†</sup> · Yuanxing Zhang</sub>
+<sub>Xuehai Bai<sup>&#42;</sup> · Zhenchen Tang<sup>&#42;</sup> · <a href="https://frankyang-17.github.io/">Yang Shi</a><sup>&#42;,♠</sup> · Dianyi Wang · Tengfei Liu · Wanshun Su<br>
+Xuanyu Zhu · Ruohui Wang · Haiwen Diao · Haotian Wang<sup>†</sup> · Xiaoling Gu<sup>†</sup> · <a href="https://longo11070001.github.io/">Yuanxing Zhang</a></sub>
 
 <sub>HDU · CASIA · PKU · SenseTime · FDU · NWPU · NTU · THU</sub><br>
-<sub><sup>\*</sup> Equal contribution &nbsp; <sup>♠</sup> Project Lead &nbsp; <sup>†</sup> Corresponding authors</sub>
+<sub><sup>&#42;</sup> Equal contribution &nbsp; <sup>♠</sup> Project Lead &nbsp; <sup>†</sup> Corresponding authors</sub>
 
 <p>
   <a href="https://arxiv.org/abs/2609.37372"><img src="assets/paper-link.svg" alt="Paper" height="44"></a>
@@ -55,11 +55,11 @@ Training and benchmark-evaluation pipelines are described in the paper; this rep
 
 Selected results from the accompanying manuscript. All three rows use a **9B** backbone; the baseline is the original Qwen3.5-9B evaluated with the same pointwise protocol.
 
-| Model | GenAI-T2I<br>(%) ↑ | MMRB2-T2I<br>(%) ↑ | EditScore-ERB<br>(O) ↑ | EditReward-ERB<br>(2-path, %) ↑ |
-| :--- | ---: | ---: | ---: | ---: |
-| Qwen3.5-9B baseline | 58.9 | 59.4 | 0.401 | 33.8 |
-| TRM (SFT) | 70.1 | 65.8 | 0.743 | 67.8 |
-| **TRM (RL)** | **71.2** | **67.9** | **0.773** | **71.3** |
+| Model               | GenAI-T2I(%) ↑ | MMRB2-T2I(%) ↑ | EditScore-ERB(O) ↑ | EditReward-ERB(2-path, %) ↑ |
+| :------------------ | --------------: | --------------: | ------------------: | ---------------------------: |
+| Qwen3.5-9B baseline |            58.9 |            59.4 |               0.401 |                         33.8 |
+| TRM (SFT)           |            70.1 |            65.8 |               0.743 |                         67.8 |
+| **TRM (RL)**  |  **71.2** |  **67.9** |     **0.773** |               **71.3** |
 
 <sub>GenAI-T2I and MMRB2-T2I report pairwise preference accuracy on non-tied predictions, following the main-paper protocol. Tie-aware TRM (RL) accuracy is 68.4% and 63.9%, respectively; see the paper appendix for the full protocol.</sub>
 
@@ -150,21 +150,21 @@ Single-image inference prints JSON. The following is a shortened example; rubric
 }
 ```
 
-| Field | Meaning |
-| :--- | :--- |
-| `reward` | Normalized reward in **[0, 1]**, computed as `final_score / 10` |
-| `final_score` | Parsed score clamped to **[0, 10]**; higher is better |
-| `parsed` | The model's structured rubric, judgments, dimension summaries, and score explanation |
-| `raw_output` | The original generated text |
+| Field           | Meaning                                                                              |
+| :-------------- | :----------------------------------------------------------------------------------- |
+| `reward`      | Normalized reward in**[0, 1]**, computed as `final_score / 10`               |
+| `final_score` | Parsed score clamped to**[0, 10]**; higher is better                           |
+| `parsed`      | The model's structured rubric, judgments, dimension summaries, and score explanation |
+| `raw_output`  | The original generated text                                                          |
 
 The vLLM backend also returns `response_id`.
 
 ## Models
 
-| Model | Backbone | Checkpoint configuration |
-| :--- | :--- | :--- |
-| **TRM-Edit** | Qwen3.5-9B | `TRM_EDIT_MODEL` |
-| **TRM-T2I** | Qwen3.5-9B | `TRM_T2I_MODEL` |
+| Model              | Backbone   | Checkpoint configuration |
+| :----------------- | :--------- | :----------------------- |
+| **TRM-Edit** | Qwen3.5-9B | `TRM_EDIT_MODEL`       |
+| **TRM-T2I**  | Qwen3.5-9B | `TRM_T2I_MODEL`        |
 
 Browse the [Thinking Reward Model collection on Hugging Face](https://huggingface.co/collections/asdjghh/thinking-reward-model) for TRM resources. Use local checkpoint paths with the inference commands above.
 
